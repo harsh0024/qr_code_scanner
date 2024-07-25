@@ -50,6 +50,9 @@ android {
             signingConfig = signingConfigs.debug
         }
     }
+//    dependencies {
+//        implementation 'io.flutter:flutter_embedding_android:1.0.2'
+//    }
 }
 
 flutter {

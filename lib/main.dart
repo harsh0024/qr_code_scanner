@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/scan_qr_code.dart';
-import 'blank_screen.dart';
+import 'login_screen.dart';
+
 
 
 void main() {
@@ -17,11 +18,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/',
+      initialRoute: '/login',
       routes: {
-        '/': (context) => HomePage(),
+        '/login': (context) => LoginScreen(),
+        '/home': (context) => HomePage(),
         '/scan': (context) => ScanQrCode(),
-        '/blank': (context) => BlankScreen(data: ''),
       },
     );
   }
